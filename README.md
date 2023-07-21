@@ -23,6 +23,6 @@ Config hyper-parameters in `mcode/config.py` and run `train.py` for training:
 ```
 python train.py
 ```
-Here is an example in [Google Colab](https://colab.research.google.com/drive/1vUgh7XCiVyboYIAaRBQ2TDVMi8v0CLLK?usp=sharing)
+Here is an example in [Google Colab](https://colab.research.google.com/drive/1VkcuPj_NBw7vpCtZT5gKAUFrZ20IdBkZ?usp=sharing)
 ### Evaluation
 After training, evaluation will be done automatically
