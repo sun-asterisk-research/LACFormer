@@ -39,9 +39,5 @@ __all__ = [
     'PointHead', 'APCHead', 'DMHead', 'LRASPPHead', 'SETRUPHead',
     'SETRMLAHead', 'DPTHead', 'SETRMLAHead', 'SegmenterMaskTransformerHead',
     'SegformerHead', 'ISAHead', 'STDCHead', 'IterativeDecodeHead',
-    'KernelUpdateHead', 'KernelUpdator', 'UperLRCHead',
-    'MLPGeSEHead', 'MLPGeSEHead_v2', 'MLPSEHead', 'MLPLAHead',
-    'MLPLARAHead', 'MLP_OSAHead', 'MLPSLowHead', 'MLPSLowCatHead',
-    'MLPSLowCatSEHead', 'MLPSLowCatESEHead', 'MLPSLowCatLAHead', 'RPFNHead',
-    'MLP_OSAHead_v2', 'SSFormerHead', 'MLP_OSAHead_v3', 'MLP_OSAHead_v4', 'UPerHeadV3', 'DRPHead'
+    'KernelUpdateHead', 'KernelUpdator', 'UperLRCHead','DRPHead', 'SSFormerHead', 'RPFNHead'
 ]
