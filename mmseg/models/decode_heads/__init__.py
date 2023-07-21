@@ -29,17 +29,7 @@ from .setr_up_head import SETRUPHead
 from .stdc_head import STDCHead
 from .uper_head import UPerHead
 from .uper_LRC_head import UperLRCHead
-from .mlp_GeSE import MLPGeSEHead, MLPGeSEHead_v2, MLPSEHead
-from .mlp_la_head import MLPLAHead
-from .mlp_la_ra_head import MLPLARAHead
-from .mlp_osa_head import MLP_OSAHead, MLP_OSAHead_v2, MLP_OSAHead_v3, MLP_OSAHead_v4
-from .mlp_slow_head import MLPSLowHead
-from .mlp_slowcat_head import MLPSLowCatHead
-from .mlp_slowcatse_head import MLPSLowCatSEHead
-from .mlp_slowcatese_head import MLPSLowCatESEHead
-from .mlp_slowcat_la_head import MLPSLowCatLAHead
 from .ssformer_head import SSFormerHead
-from .uper_headv3 import UPerHeadV3
 from .rcfpn_head import RPFNHead
 from .drp_head import DRPHead
 __all__ = [
