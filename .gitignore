@@ -119,11 +119,9 @@ mmseg/.mim
 logs/
 configs/
 demo/
-pretrained/*
 # Pytorch
 *.pth
 
-Dataset/*
 runs/*
 *.pyc
 
