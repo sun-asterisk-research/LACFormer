@@ -154,7 +154,7 @@ class DRPHead(BaseDecodeHead):
         self.decoder2_up1 = upConvLayer(self.in_channels[3]//2, self.in_channels[3]//2, 2, norm, act)
         self.decoder2_attn = PSABlock(self.in_channels[3]//2, self.in_channels[3]//2)
         self.decoder2_temp = nn.Parameter(torch.ones(1, dtype=torch.float32), requires_grad=True)
-        self.decoder2_reduc1 = Conv(self.in_channels[3]//2 + self.in_channels[2] + 1, self.in_channels[3]//2, kSize=kSize, stride=1, padding=kSize//2,bias=False, 
+        self.decoder2_reduc1 = Conv(self.in_channels[3]//2 + self.in_channels[2] + 3, self.in_channels[3]//2, kSize=kSize, stride=1, padding=kSize//2,bias=False, 
                                         norm=norm, act=act)
         self.decoder2_1 = Conv(self.in_channels[3]//2, self.in_channels[3]//4, kSize, stride=1, padding=kSize//2, bias=False, 
                                         norm=norm, act=act)
@@ -176,7 +176,7 @@ class DRPHead(BaseDecodeHead):
         self.decoder3_up2 = upConvLayer(self.in_channels[3]//4, self.in_channels[3]//4, 2, norm, act, (self.in_channels[3]//4)//16)
         self.decoder3_attn = PSABlock(self.in_channels[3]//4, self.in_channels[3]//4)
         self.decoder3_temp = nn.Parameter(torch.ones(1, dtype=torch.float32), requires_grad=True)
-        self.decoder3_reduc2 = Conv(self.in_channels[3]//4 + self.in_channels[1] + 1, self.in_channels[3]//4, kSize=kSize, stride=1, padding=kSize//2,bias=False, 
+        self.decoder3_reduc2 = Conv(self.in_channels[3]//4 + self.in_channels[1] + 3, self.in_channels[3]//4, kSize=kSize, stride=1, padding=kSize//2,bias=False, 
                                         norm=norm, act=act)
         self.decoder3_1 = Conv(self.in_channels[3]//4, self.in_channels[3]//8, kSize, stride=1, padding=kSize//2, bias=False, 
                                         norm=norm, act=act)
@@ -198,7 +198,7 @@ class DRPHead(BaseDecodeHead):
         self.decoder4_up3 = upConvLayer(self.in_channels[3]//8, self.in_channels[3]//8, 2, norm, act, (self.in_channels[3]//8)//16)
         self.decoder4_attn = PSA_p(self.in_channels[3]//8, self.in_channels[3]//8)
         self.decoder4_temp = nn.Parameter(torch.ones(1, dtype=torch.float32), requires_grad=True)
-        self.decoder4_reduc3 = Conv(self.in_channels[3]//8 + self.in_channels[0] + 1, self.in_channels[3]//8, kSize=kSize, stride=1, padding=kSize//2,bias=False, 
+        self.decoder4_reduc3 = Conv(self.in_channels[3]//8 + self.in_channels[0] + 3, self.in_channels[3]//8, kSize=kSize, stride=1, padding=kSize//2,bias=False, 
                                         norm=norm, act=act)
         self.decoder4_1 = Conv(self.in_channels[3]//8, self.in_channels[3]//16, kSize, stride=1, padding=kSize//2, bias=False, 
                                         norm=norm, act=act)
@@ -216,7 +216,7 @@ class DRPHead(BaseDecodeHead):
         self.decoder5_up4 = upConvLayer(self.in_channels[3]//16, self.in_channels[3]//16, 2, norm, act, (self.in_channels[3]//16)//16)
         self.decoder5_attn = PSA_p(self.in_channels[3]//16, self.in_channels[3]//16)
         self.decoder5_temp = nn.Parameter(torch.ones(1, dtype=torch.float32), requires_grad=True)
-        self.decoder5_reduc4 = Conv(self.in_channels[3]//16 + 1, self.in_channels[3]//16, kSize=kSize, stride=1, padding=kSize//2,bias=False, 
+        self.decoder5_reduc4 = Conv(self.in_channels[3]//16 + 3, self.in_channels[3]//16, kSize=kSize, stride=1, padding=kSize//2,bias=False, 
                                         norm=norm, act=act)
         self.decoder5_1 = Conv(self.in_channels[3]//16, self.in_channels[3]//32, kSize, stride=1, padding=kSize//2, bias=False, 
                                         norm=norm, act=act)

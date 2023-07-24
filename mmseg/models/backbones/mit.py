@@ -452,9 +452,9 @@ class MixVisionTransformer(BaseModule):
         return outs, laplacian
 
     def rgb_compute(self, x):
-        blur = T.GaussianBlur(kernel_size=(7,7))
-        x = x.mean(dim=1,keepdim=True)
-        x = blur(x)
+        # blur = T.GaussianBlur(kernel_size=(7,7))
+        # x = x.mean(dim=1,keepdim=True)
+        # x = blur(x)
         rgb_down2 = F.interpolate(x, scale_factor = 0.5, mode='bilinear')
         rgb_down4 = F.interpolate(rgb_down2, scale_factor = 0.5, mode='bilinear')
         rgb_down8 = F.interpolate(rgb_down4, scale_factor = 0.5, mode='bilinear')
