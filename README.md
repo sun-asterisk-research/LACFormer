@@ -2,7 +2,7 @@
 This repository contains the official Pytorch implementation of training & evaluation code for LACFormer.
 
 ### Environment
-- Creating a virtual environment in terminal: `conda create -n LACFormer`
+- Creating a virtual environment in terminal: `conda create -n LACFormer python=3.8.16`
 - Install `CUDA 11.3` and `pytorch 1.8.1`: `conda install pytorch==1.8.1 torchvision==0.9.1 torchaudio==0.8.1 cudatoolkit=11.3 -c pytorch -c conda-forge`
 - Install other requirements: `pip install -r requirements.txt`
 ### Dataset
