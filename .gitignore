@@ -121,7 +121,6 @@ configs/
 demo/
 # Pytorch
 *.pth
-
 runs/*
 *.pyc
 
