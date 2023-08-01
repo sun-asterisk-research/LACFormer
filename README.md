@@ -8,8 +8,8 @@ This repository contains the official Pytorch implementation of training & evalu
 ### Dataset
 Downloading necessary data:
 For `Experiment` in our paper: 
-- Download testing dataset and move it into `./Dataset/TestDataset/`, which can be found in this [download link (Google Drive)](https://drive.google.com/file/d/1o8OfBvYE6K-EpDyvzsmMPndnUMwb540R/view).
-- Download training dataset and move it into `./Dataset/TrainDataset/`, which can be found in this [download link (Google Drive)](https://drive.google.com/file/d/1lODorfB33jbd-im-qrtUgWnZXxB94F55/view).
+- Download testing dataset, move it into `Dataset/` and extract the file zip, which can be found in this [download link (Google Drive)](https://drive.google.com/file/d/1o8OfBvYE6K-EpDyvzsmMPndnUMwb540R/view).
+- Download training dataset, move it into `Dataset/` and extract the file zip, which can be found in this [download link (Google Drive)](https://drive.google.com/file/d/1lODorfB33jbd-im-qrtUgWnZXxB94F55/view).
 
     
 ### Training
